@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Payment Gateway Form Design using HTML and CSS | Codehal</title>
+    <link rel="stylesheet" href="/css/payment.css">
+    <link rel="stylesheet" href="https://fonts.googleleapis.com">
+
+    
+</head>
+
+<body>
+    <div class="container">
+        <form action="/payment" method="POST">
+            <div class="row">
+                <div class="column">
+                    <h3 class="title">Billing Address</h3>
+                    <div class="input-box">
+                        <span>Full Name</span>
+                        <input type="text" name="Full_Name" placeholder="Jacob Aiden" required>
+                    </div>
+                    <div class="input-box">
+                        <span>Email</span>
+                        <input type="email" name="Email" placeholder="example@example.com" required>
+                    </div>
+                    <div class="input-box">
+                        <span>Address</span>
+                        <input type="text" name="Address" placeholder="Door no - Street - Locality" required>
+                    </div>
+                    <div class="input-box">
+                        <span>City</span>
+                        <input type="text" name="City" placeholder="Berlin" required>
+                    </div>
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>State</span>
+                            <input type="text" name="State" placeholder="Germany" required>
+                        </div>
+                        <div class="input-box">
+                            <span>Zip code</span>
+                            <input type="text" name="Zip_code" placeholder="123 455" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3 class="title">Payment</h3>
+                    <div class="input-box">
+                        <span>Card Accepted</span>
+                        <img src="images/payment.png" alt="">
+                    </div>
+                    <div class="input-box">
+                        <span>Name On Card</span>
+                        <input type="text" name="Name_On_Card" placeholder="Mr. Jacob Aiden" required>
+                    </div>
+                    <div class="input-box">
+                        <span>Debit Card</span>
+                        <input type="text" name="Debit_Card" placeholder="1111 2222 3333 4444" required>
+                    </div>
+                    <div class="input-box">
+                        <span>Exp. Month</span>
+                        <input type="text" name="Exp_Month" placeholder="April" required>
+                    </div>
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>Exp. Year</span>
+                            <input type="text" name="Exp_Year" placeholder="2027" required>
+                        </div>
+                        <div class="input-box">
+                            <span>CVV</span>
+                            <input type="text" name="CVV" placeholder="123" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="radio-buttons">
+                <h2>Course</h2>
+                <input type="radio" id="html" name="Course" value="HTML">
+                <label for="html">HTML</label>
+                <input type="radio" id="css" name="Course" value="CSS">
+                <label for="css">CSS</label>
+                <input type="radio" id="javascript" name="Course" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+                <input type="radio" id="python" name="Course" value="Python">
+                <label for="python">Python</label>
+                <input type="radio" id="c" name="Course" value="C">
+                <label for="c">C</label>
+                <input type="radio" id="java" name="Course" value="Java">
+                <label for="java">Java</label>
+            </div>
+            
+            <center><button type="submit">Submit</button></center>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href='css/register.css'>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form action="/" method="post">
+            <input type="text" name="username" placeholder="Enter your username" required>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="tel" name="phone" placeholder="Enter your phone number" required>
+            <label for="role">Select Role:</label>
+            <input type="radio" id="student" name="role" value="student" checked>
+            <label for="student">Student</label>
+            <input type="radio" id="admin" name="role" value="admin">
+            <label for="admin">Admin</label>
+            <button type="submit">Register</button>
+            <center><p>Already have an account? </p></center>
+        <center><p> <a href="/login">User login</a> / <a href="/admin-login">admin-login</a></p></center>
+        </form>
+        
+    </div>
+</body>
+</html>

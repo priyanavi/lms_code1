@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard |By Code Info</title>
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="/css/style1.css">
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <u1>
+                <li><a href="#" class ="logo">
+                <img  src='/images/hello.jpg' alt ="">
+                <span class ="nav-item">DashBoard</span>
+            </a></li>
+            <li><a href = "#">
+                <i class = "fas fa-home"></i>
+                <span class ="nav-item">Home</span>
+            </a></li>
+            <li><a href = "#">
+                <i class = "fas fa-user"></i>
+                <span class ="nav-item">Profile</span>
+            </a></li>
+            <li><a href = "#">
+                <i class = "fas fa-wallet"></i>
+                <span class ="nav-item">Wallet</span>
+            </a></li>
+            <li><a href = "#">
+                <i class = "fas fa-chart-bar"></i>
+                <span class ="nav-item">Analytics</span>
+            </a></li>
+            <li><a href = "#">
+                <i class = "fas fa-tasks"></i>
+                <span class ="nav-item">Tasks</span>
+            </a></li>
+            <li><a href = "#">
+                <i class = "fas fa-cog"></i>
+                <span class ="nav-item">Settings</span>
+            </a></li>
+            <li><a href = "#">
+                <i class = "fas fa-question-circle"></i>
+                <span class ="nav-item">Help</span>
+            </a></li>
+            <li><a href = "" class="Logout">
+                <i class = "fas fa-sign-out-alt"></i>
+                <span class ="nav-item">Logout</span>
+            </a></li>
+         </u1>
+        </nav>
+        <section class="main">
+            <div class="main-top">
+                <h1>Skills</h1>
+                <i class="fas fa-user-cog"></i>
+            </div>
+            <div class="main-skills">
+                <div class="card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web development</h3>
+                    <p> Join over 10 Students</p>
+                    <button>Get Started W</button>
+                </div>
+                <div class="card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <p> Join over 10 Students</p>
+                    <button>Get Started P</button>
+                </div>
+                <div class="card">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                    <p> Join over 10 Students</p>
+                    <button>Get Started J</button>
+                </div>
+                <div class="card">
+                    <i class="fas fa-code"></i>
+                    <h3>C</h3>
+                    <p> Join over 10 Students</p>
+                    <button>Get Started C</button>
+                </div>
+            </div>
+            <section class="main-course">
+                <h1>My Courses</h1>
+                <div class="course-box">
+                    <ul>
+                        <li class="active">In Progress</li>
+                        <li>Explore</li>
+                        <li>Incoming</li>
+                        <li>Finished</li>
+                    </ul>
+                    <div class="course">
+                        <div class="box">
+                            <h3>HTML</h3>
+                            <p>80% -progress</p>
+                            <button>continue HTML</button>
+                            <i class="fab fa-html5 html"></i>
+                        </div>
+                        <div class="box">
+                            <h3>CSS</h3>
+                            <p>50% -progress</p>
+                            <button>continue CSS</button>
+                            <i class="fab fa-css3-alt css"></i>
+                        </div>
+                        <div class="box">
+                            <h3>Javascript</h3>
+                            <p>30% -progress</p>
+                            <button>continue Javascript</button>
+                            <i class="fab fa-js-square js"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+    <script>
+        // Get references to the "Get Started" buttons
+        const webDevBtn = document.getElementById('webDevBtn');
+        const pythonBtn = document.getElementById('pythonBtn');
+        const javaBtn = document.getElementById('javaBtn');
+        const cBtn = document.getElementById('cBtn');
+    
+        // Add event listeners to the buttons
+        webDevBtn.addEventListener('click', () => {
+            alert('You clicked the Web Development button!');
+        });
+    
+        pythonBtn.addEventListener('click', () => {
+            alert('You clicked the Python button!');
+        });
+    
+        javaBtn.addEventListener('click', () => {
+            alert('You clicked the Java button!');
+        });
+    
+        cBtn.addEventListener('click', () => {
+            alert('You clicked the C button!');
+        });
+    </script>
+    
+    
+</body>
+</html>

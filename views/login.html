@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <style>
+        /* Paste the CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="/user-login" method="post">
+            <input type="text" name="username" placeholder="Enter your username" required>
+            <input type="tel" name="email" placeholder="Enter your Email" required>
+            <button type="submit">Send OTP</button>
+        </form>
+        <center><p>Create an account <a href="/">Register</a></p></center>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const registeredEmail = urlParams.get('registered');
+        
+            if (registeredEmail) {
+                alert(`User with email ${registeredEmail} is already registered. Please login.`);
+            }
+        </script>
+        
+        
+    </div>
+</body>
+</html>

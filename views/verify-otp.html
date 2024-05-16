@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="/css/verify_otp.css">
+</head>
+<body>
+    <h1>OTP Verification</h1>
+    <form action="/verify-otp" method="post">
+        <input type="hidden" name="phone" value="<%= phone %>">
+        <input type="text" name="OTP" placeholder="Enter OTP" required>
+        <center><button type="submit">Submit OTP</button></center>
+        <p id="error-message" style="color: red; text-align: center; display: none;"></p> <!-- Placeholder for error message -->
+    </form>
+    <script>
+        // Check if there's an error parameter in the query string
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get('error');
+ 
+        // If there's an error and it's 'true', display the error message
+        if (error === 'true') {
+            const errorMessage = document.getElementById('error-message');
+            errorMessage.textContent = " OTP is incorrect..!";
+            errorMessage.style.display = 'block'; // Display the error message
+        }
+     </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <link rel="stylesheet" href="/css/pay.css">
+</head>
+<body>
+    <div class="container">
+        <form id="redirectForm" action="/home" method="post">
+            <!-- You can add additional form fields here if needed -->
+            <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+            <div class="popup" id="popup">
+                <img src="/images/tick.png" alt="">
+                <h2>Thank You!</h2>
+                <p>Your details have been successfully submitted. Thanks!</p>
+                <button type="button" onclick="redirectToHome()">OK</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        let popup = document.getElementById('popup');
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup")
+        }
+
+        function redirectToHome() {
+            // Redirect to the home page
+            document.getElementById('redirectForm').submit();
+        }
+    </script>
+</body>
+</html>
