@@ -1,0 +1,135 @@
+/* CSS for Course Details Page */
+
+/* Global Styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body, html {
+   height: 100%;
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4; /* Fallback background color */
+}
+.course-details .container .teacher-name{
+   margin-top: 10px;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bold;
+   font-size: 30px;
+}
+body {
+   background-image: url("../images/ht.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.container {
+   max-width: 800px; /* Adjust container width */
+   margin: 0 auto; /* Center the container horizontally */
+   padding: 20px;
+}
+
+/* Header Styles */
+.header {
+   background-color: #333;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+   margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.header h1 {
+   margin: 0;
+}
+
+/* Course Details Styles */
+.course-title {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.teacher-info {
+   text-align: center;
+   margin-bottom: 40px; /* Increase margin for more spacing */
+}
+
+.teacher-info img {
+   border-radius: 50%;
+   width: 150px;
+   height: 150px;
+   border: 4px solid #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+   margin-bottom: 20px; /* Increase margin for more spacing */
+}
+
+.course-description {
+   margin-bottom: 40px; /* Increase margin for more spacing */
+   text-align: center;
+   font-family:'Times New Roman', Times, serif;
+   font-size: 20px;
+}
+.course-description h2{
+   margin-bottom: 25px;
+}
+
+.course-description p{
+   margin-bottom: 25px;
+}
+
+.about-course h2 {
+   margin-bottom: 30px; /* Increase margin for more spacing */
+   text-align: center;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 30px;
+}
+
+.about-course ul {
+   font-family: 'Times New Roman', Times, serif;
+   padding: 0;
+   margin: 0;
+   font-size: 20px;
+   /* text-align: left; */
+}
+
+.about-course ul li {
+   margin-bottom: 10px; /* Adjust margin for spacing between details */
+}
+
+.teacher-info .teacher-name {
+   font-weight: bold;
+   font-size: 18px;
+}
+
+.teacher-info .teacher-title {
+   font-size: 16px;
+   color: #666;
+}
+
+.payment-section {
+   text-align: center;
+}
+
+.price {
+   font-size: 24px;
+   color: #333;
+   margin-bottom: 20px; /* Increase margin for more spacing */
+}
+
+.payment-button {
+   padding: 10px 20px;
+   background-color: #4CAF50;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   font-size: 16px;
+}
+
+.payment-button:hover {
+   background-color: #45a049;
+}
+
+
+
